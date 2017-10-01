@@ -3,25 +3,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>EuroRomCom</title>
   <meta name="description" content="Display data EuroRomCom">
-
+  <link rel="stylesheet" href="../libs/css/spectre.min.css">
   <link rel="stylesheet" href="css/styles.css">
-	
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
-  <select id="selectedList">
+  <select id="selectedList" class="form-select" autocomplete="off">
     <option disabled selected value> -- Lists -- </option>
     <option value="completely-pan-romance">Completely Pan Romance</option>
     <option value="pan-romance-germanic">Pan Romance of Germanic Origin</option>
+    <option value="pan-romance-in-eight">Pan Romance in Eight Languages</option>
+    <option value="pan-romance-elements-from-latin">Pan Romance Elements from Latin</option>
   </select>
-  <table id="excelDataTable" border="1"></table>
+  <table id="excelDataTable" class="table table-striped table-hover" border="1"></table>
 
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>

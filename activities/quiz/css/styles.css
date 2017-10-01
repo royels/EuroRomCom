@@ -1,0 +1,22 @@
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#lang1, #lang2, .answer, #startGame, #info, #toastMsg {
+  display: none;
+  margin: 2px;
+}
+#toastMsg {
+  width:40%;
+  left:50%;
+  bottom:20%;
+  margin-left:-20%;
+  position:absolute;
+  text-align:center;
+}
+
+/*.badge[data-badge]::after {
+  background: red;
+}*/

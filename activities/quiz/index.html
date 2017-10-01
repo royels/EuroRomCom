@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EuroRomCom</title>
+  <meta name="description" content="EuroRomCom Quiz">
+  <meta name="author" content="Philip Richard Kirkbride">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../libs/css/spectre.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="content">
+    <select id="selectedList"  class="form-select" autocomplete="off">
+      <option disabled selected value> -- Lists -- </option>
+      <option value="completely-pan-romance">Completely Pan Romance</option>
+      <option value="pan-romance-germanic">Pan Romance of Germanic Origin</option>
+      <option value="pan-romance-in-eight">Pan Romance in Eight Languages</option>
+      <option value="pan-romance-elements-from-latin">Pan Romance Elements from Latin</option>
+    </select>
+    <br>
+
+    <select id="lang1" class="form-select"></select>
+    <select id="lang2" class="form-select"></select>
+
+    <button id="startGame" class="btn">Start</button>
+
+    <br><h1 id="question"></h1><br>
+
+    <button id="a1" class="answer btn"></button>
+    <button id="a2" class="answer btn"></button>
+    <button id="a3" class="answer btn"></button>
+    <button id="a4" class="answer btn"></button>
+
+    <br><br><span id="info" class="badge" data-badge="0">Streak </span> <span id="result"></span>
+  </div>
+  <div id="toastMsg" class="toast"></div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
